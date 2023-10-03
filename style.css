@@ -3,8 +3,10 @@
 }
 
 .post-div {
+    margin: 0px auto;
     margin-top: 30px;
     box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+    width: 60%;
     /* align-items: center; */
 
 }
@@ -24,4 +26,8 @@
 .name-time{
     margin-left: 10px;
     margin-top: 10px;
+}
+.post-text-area{
+    border: none;
+    outline: none;
 }
