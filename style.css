@@ -1,5 +1,8 @@
 .navbar {
-    background-color: rgb(218, 124, 213) !important;
+    background-color: rgb(124, 218, 144) !important;
+}
+body{
+    background-color: rgb(160, 174, 255) !important ;
 }
 
 .post-div {
@@ -34,6 +37,7 @@
     width: 100%;
 }
 .bg-1{
+    width: 100%;
     padding-top: 30px;
     background-image: url(./img/bg-1.avif);
     background-repeat: no-repeat;
@@ -43,6 +47,7 @@
     
 }
 .bg-2{
+    width: 100%;
     padding-top: 30px;
     background-image: url(./img/bg-2.avif);
     background-repeat: no-repeat;
@@ -52,6 +57,7 @@
     
 }
 .bg-3{
+    width: 100%;
     padding-top: 30px;
     background-image: url(./img/bg-3.jpg);
     background-repeat: no-repeat;
@@ -70,3 +76,4 @@
     margin: 0px;
     background-color: #f0eaea !important;
 }
+

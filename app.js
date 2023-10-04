@@ -1,15 +1,22 @@
 
+var text = document.getElementById("text")
+var color = document.getElementById("color")
+var postDiv = document.getElementById("time-line-post")
 var background = ""
+var selectedColor = ""
+function getcolor() {
+  selectedColor = color.value
+  text.style.color = selectedColor
+}
 function getBackground(bacImg) {
-    background = bacImg
-    
-    console.log(background)
+  background = bacImg
+  text.className = background
+
+
+
 }
 function postBtn() {
-    let color = document.getElementById("color")
-    let postDiv = document.getElementById("time-line-post")
-    let text = document.getElementById("text")
-    postDiv.innerHTML = ` <div class="card post-div">
+  postDiv.innerHTML = ` <div class="card post-div">
     <div class="profile-area">
       <img
         class="profile"
@@ -20,11 +27,11 @@ function postBtn() {
       />
       <div class="name-time">
         <h5>Ahmed Karim</h5>
-        <p>just now</p>
+        <p>${moment().format('LT')}</p>
       </div>
     </div>
     <div class="card-body  ${background}">
-      <h3>${text.value}</h3>
+      <h3 style="color: ${selectedColor};">${text.value}</h3>
     </div>
     <div class="like-div">
       <p class="btn like-btn">Like</p>
@@ -32,6 +39,8 @@ function postBtn() {
       <p class="btn like-btn">Share</p>
     </div>
     </div>` + postDiv.innerHTML
-    background = ""
-    text.value = ""
+  background = ""
+  text.value = ""
+  text.className = "post-text-area"
+  text.style.color = "#0d0d0d"
 }
